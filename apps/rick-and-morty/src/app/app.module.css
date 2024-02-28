@@ -1,1 +1,94 @@
-/* Your styles goes here. */
+:root {
+  --background-color: #121212;
+  --card-background-color: #222831;
+  --text-color: #e1e1e6;
+  --title-color: #ffffff;
+  --info-color: #aaaaaa;
+  --highlight-color: #ff2e63;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen-Sans,
+    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+  align-items: flex-start;
+}
+
+.title {
+  text-align: center;
+  color: var(--highlight-color);
+  margin: 40px 0;
+  width: 100%;
+}
+
+.card {
+  width: 300px;
+  background-color: var(--card-background-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.card:hover::before {
+  left: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 15px;
+}
+
+.cardTitle {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: var(--title-color);
+}
+
+.cardInfo {
+  margin: 5px 0;
+  font-size: 14px;
+  color: var(--info-color);
+}

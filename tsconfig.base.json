@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@local/api-utils": ["libs/api-framework/ddd-utils/src/index.ts"],
+      "@local/rnm-api": ["services/rnm-api/src/main.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

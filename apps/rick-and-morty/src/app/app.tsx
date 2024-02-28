@@ -1,12 +1,33 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React from 'react';
 import styles from './app.module.css';
-
-import NxWelcome from './nx-welcome';
+import { useGetCharacters } from './data/useGetCharacters';
 
 export function App() {
+  const charactersQuery = useGetCharacters({});
+  const characters = charactersQuery.data?.results;
+
   return (
     <div>
-      <NxWelcome title="rick-and-morty" />
+      <h1 className={styles.title}>Welcome, Traveler</h1>
+      <div className={styles.container}>
+        {characters?.map((character) => (
+          <div key={character.id} className={styles.card}>
+            <img
+              src={character.image}
+              alt={character.name}
+              className={styles.cardImage}
+            />
+            <div className={styles.cardContent}>
+              <h2 className={styles.cardTitle}>{character.name}</h2>
+              <p className={styles.cardInfo}>Status: {character.status}</p>
+              <p className={styles.cardInfo}>Species: {character.species}</p>
+              <p className={styles.cardInfo}>
+                Location: {character.location.name}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

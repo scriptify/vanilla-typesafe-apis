@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generate-api-json-schemas should generate the correct schema from complex types 1`] = `
+Object {
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "properties": Object {
+    "comments": Object {
+      "items": Object {
+        "additionalProperties": false,
+        "properties": Object {
+          "message": Object {
+            "type": "string",
+          },
+          "user": Object {
+            "additionalProperties": false,
+            "properties": Object {
+              "avatar": Object {
+                "additionalProperties": false,
+                "properties": Object {
+                  "formats": Object {
+                    "additionalProperties": false,
+                    "properties": Object {
+                      "large": Object {
+                        "type": "string",
+                      },
+                      "medium": Object {
+                        "type": "string",
+                      },
+                      "small": Object {
+                        "type": "string",
+                      },
+                      "thumbnail": Object {
+                        "type": "string",
+                      },
+                    },
+                    "required": Array [
+                      "large",
+                      "medium",
+                      "small",
+                      "thumbnail",
+                    ],
+                    "type": "object",
+                  },
+                  "url": Object {
+                    "type": "string",
+                  },
+                },
+                "required": Array [
+                  "formats",
+                  "url",
+                ],
+                "type": "object",
+              },
+              "email": Object {
+                "type": "string",
+              },
+              "name": Object {
+                "type": "string",
+              },
+            },
+            "required": Array [
+              "avatar",
+              "email",
+              "name",
+            ],
+            "type": "object",
+          },
+        },
+        "required": Array [
+          "message",
+          "user",
+        ],
+        "type": "object",
+      },
+      "type": "array",
+    },
+    "message": Object {
+      "type": "string",
+    },
+    "price": Object {
+      "anyOf": Array [
+        Object {
+          "additionalProperties": false,
+          "properties": Object {
+            "amount": Object {
+              "type": "number",
+            },
+            "currency": Object {
+              "enum": Array [
+                "EUR",
+                "USD",
+              ],
+              "type": "string",
+            },
+          },
+          "required": Array [
+            "amount",
+            "currency",
+          ],
+          "type": "object",
+        },
+        Object {
+          "type": "null",
+        },
+      ],
+    },
+  },
+  "required": Array [
+    "comments",
+    "message",
+  ],
+  "type": "object",
+}
+`;
