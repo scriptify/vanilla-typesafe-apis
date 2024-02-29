@@ -8,7 +8,7 @@ End-to-end type-safe APIs without dependencies or ecosystem buy-in. Just your RE
 
 We only want effortless, type-safe APIs all the way down the stack. This is how it should work:
 
-/docs/typesafe_apis_video.mp4
+<video controls src="https://github.com/scriptify/vanilla-typesafe-apis/raw/main/docs/typesafe_apis_video.mp4" title="/docs/typesafe_apis_video.mp4"></video>
 
 And that indeed is how it works!
 
