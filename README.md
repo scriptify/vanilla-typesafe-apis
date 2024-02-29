@@ -8,7 +8,7 @@ End-to-end type-safe APIs without dependencies or ecosystem buy-in. Just your RE
 
 We only want effortless, type-safe APIs all the way down the stack. This is how it should work:
 
-![](/docs/typesafe_apis_video.mp4)
+/docs/typesafe_apis_video.mp4
 
 And that indeed is how it works!
 
