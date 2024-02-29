@@ -2,9 +2,7 @@ import styles from './app.module.css';
 import { useGetCharacters } from './data/useGetCharacters';
 
 export function App() {
-  const charactersQuery = useGetCharacters({
-    visibility: 'public',
-  });
+  const charactersQuery = useGetCharacters({});
   const characters = charactersQuery.data?.results;
 
   return (
