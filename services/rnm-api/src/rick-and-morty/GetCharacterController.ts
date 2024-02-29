@@ -19,7 +19,6 @@ export type GetCharacterQueryParameters = {
    * @description The page number to retrieve
    */
   pageNumber?: string;
-  visibility: string;
 };
 
 type Character = {
