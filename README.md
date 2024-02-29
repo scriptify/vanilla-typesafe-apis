@@ -1,16 +1,12 @@
 # Type-safe APIs using vanilla TypeScript
 
-_This is not a library or framework. It is rather a simple solution to implement fullstack typesafe APIs without external dependencies._
-
-You can have the cake and eat it too.
+_This is not a library or framework. It is rather a simple solution to implement fullstack type-safe APIs without external dependencies._
 
 End-to-end type-safe APIs without dependencies or ecosystem buy-in. Just your REST APIs, some TypeScript, and a happy developer.
 
-We only want effortless, type-safe APIs all the way down the stack. This is how it should work:
+We only want effortless, type-safe APIs all the way down the stack.
 
-https://github.com/scriptify/vanilla-typesafe-apis/raw/main/docs/typesafe_apis_video.mp4
-
-And that indeed is how it works!
+https://github.com/scriptify/vanilla-typesafe-apis/assets/20152692/8d10d216-fde7-4b32-9e05-08f930c241a7
 
 The concept is very simple: TypeScript API controllers that expose all needed typing information and runtime type safety thanks to standard JSON Schemas.
 
@@ -26,7 +22,3 @@ To explore the concepts and implementations detailed in this repository, check o
 
 - **Detailed Explanation:** For a deep dive into the motivations, concepts, and step-by-step implementation guide, read my comprehensive blog post: [You don't need GraphQL or tRPC](https://maximilian-torggler.dev/blog/you_might_not_need_trpc).
 - **Interactive Example:** Experiment with the live code and see the type-safe APIs in action on CodeSandbox: [![Edit scriptify/vanilla-typesafe-apis/main](https://codesandbox.io/static/img/play-codesandbox.svg)](#your-codesandbox-link-here).
-
-
-https://github.com/scriptify/vanilla-typesafe-apis/assets/20152692/8d10d216-fde7-4b32-9e05-08f930c241a7
-
