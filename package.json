@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx run-many --parallel --target=serve --projects=rick-and-morty,rnm-api"
+    "start": "nx run-many --parallel --target=serve --projects=rick-and-morty,rnm-api",
+    "generate-json-schemas": "nx run rnm-api:generate-json-schemas"
   },
   "private": true,
   "dependencies": {
