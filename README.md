@@ -26,3 +26,7 @@ To explore the concepts and implementations detailed in this repository, check o
 
 - **Detailed Explanation:** For a deep dive into the motivations, concepts, and step-by-step implementation guide, read my comprehensive blog post: [You don't need GraphQL or tRPC](https://maximilian-torggler.dev/blog/you_might_not_need_trpc).
 - **Interactive Example:** Experiment with the live code and see the type-safe APIs in action on CodeSandbox: [![Edit scriptify/vanilla-typesafe-apis/main](https://codesandbox.io/static/img/play-codesandbox.svg)](#your-codesandbox-link-here).
+
+
+https://github.com/scriptify/vanilla-typesafe-apis/assets/20152692/8d10d216-fde7-4b32-9e05-08f930c241a7
+
