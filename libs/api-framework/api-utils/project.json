@@ -1,21 +1,21 @@
 {
-  "name": "ddd-utils",
+  "name": "api-utils",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/api-framework/schema-generator/src",
+  "sourceRoot": "libs/api-framework/api-utils/src",
   "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/api-framework/schema-generator/**/*.ts"]
+        "lintFilePatterns": ["libs/api-framework/api-utils/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/api-framework/schema-generator/jest.config.ts",
+        "jestConfig": "libs/api-framework/api-utils/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {

@@ -1,9 +1,10 @@
-import React from 'react';
 import styles from './app.module.css';
 import { useGetCharacters } from './data/useGetCharacters';
 
 export function App() {
-  const charactersQuery = useGetCharacters({});
+  const charactersQuery = useGetCharacters({
+    visibility: 'public',
+  });
   const characters = charactersQuery.data?.results;
 
   return (
@@ -21,6 +22,7 @@ export function App() {
               <h2 className={styles.cardTitle}>{character.name}</h2>
               <p className={styles.cardInfo}>Status: {character.status}</p>
               <p className={styles.cardInfo}>Species: {character.species}</p>
+              <p className={styles.cardInfo}>Size: {character.size}</p>
               <p className={styles.cardInfo}>
                 Location: {character.location.name}
               </p>

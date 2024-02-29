@@ -19,6 +19,7 @@ export type GetCharacterQueryParameters = {
    * @description The page number to retrieve
    */
   pageNumber?: string;
+  visibility: string;
 };
 
 type Character = {
@@ -31,6 +32,7 @@ type Character = {
   location: {
     name: string;
   };
+  size?: number;
 };
 
 export type GetCharacterResponse = {
